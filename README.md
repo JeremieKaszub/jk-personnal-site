@@ -1,2 +1,1 @@
-jk-personnal-site
-=================
+Personnal site repository.
