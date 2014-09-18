@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* Icon url */
+[class^="icon-"], [class*=" icon-"] {
+	background-image: url(../images/glyphicons-halflings.png);
+}
+.icon-white, .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:focus > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > li > a:focus > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"], .dropdown-submenu:hover > a > [class^="icon-"], .dropdown-submenu:focus > a > [class^="icon-"], .dropdown-submenu:hover > a > [class*=" icon-"], .dropdown-submenu:focus > a > [class*=" icon-"] {
+	background-image: url(../images/glyphicons-halflings-white.png);
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+}
+
+/* color specs */
+#jkheader {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+#jkheader h1 {
+	color: #fff;
+}
+
+#jkheader img {
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+#jkheadernavbar {
+	background-color: #F87531;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	vertical-align: center;
+}
+
+#jkheadernavbar .btn {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	background-color: #d3d3d3;
+}
+
+#jkheadernavbar a {
+	color: #000;
+	text-shadow: none;
+	vertical-align: center;
+}
+
+#sociallinks img {
+	margin : 0;
+}
+
+#jkfooter {
+	background-color: #000;
+	color: #d3d3d3;
+	padding-left: 8px;
+}
+
+#jkfooter a {
+	color: #fff;
+}

@@ -1,0 +1,7 @@
+parameters:
+#    jk_static_pages.example.class: JK\StaticPagesBundle\Example
+
+services:
+#    jk_static_pages.example:
+#        class: %jk_static_pages.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,8 @@
+jk_bootstrap_twig:
+    resource: "@JKBootstrapTwigBundle/Resources/config/routing.yml"
+    prefix:   /
+
+jk_static_pages:
+    resource: "@JKStaticPagesBundle/Resources/config/routing.yml"
+    prefix:   /
+

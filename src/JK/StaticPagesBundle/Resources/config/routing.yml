@@ -1,0 +1,3 @@
+jk_static_pages_homepage:
+    path:     /home
+    defaults: { _controller: JKStaticPagesBundle:Default:index }

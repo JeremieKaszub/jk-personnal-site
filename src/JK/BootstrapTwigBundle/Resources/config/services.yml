@@ -1,0 +1,7 @@
+parameters:
+#    jk_bootstrap_twig.example.class: JK\BootstrapTwigBundle\Example
+
+services:
+#    jk_bootstrap_twig.example:
+#        class: %jk_bootstrap_twig.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
