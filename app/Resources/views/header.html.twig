@@ -1,4 +1,4 @@
-<header class="page-header" id="jkheader">
+<header class="page-header navbar-fixed-top row" id="jkheader">
 
 
 	<h1>
@@ -10,10 +10,14 @@
 	<div class="container-fluid" id="jkheadernavbar">
 		<nav class="navbar navbar-default" role="navigation">
 			<ul class="nav navbar-nav">
-				<li><a href="#" class="btn active">Qui suis-je ?</a></li>
-				<li><a href="#" class="btn">Mes formations</a></li>
-				<li><a href="#" class="btn">Mes expériences</a></li>
-				<li><a href="#" class="btn">Me contacter</a></li>
+				<li><a href="{{ path('jk_static_pages_homepage') }}" class="btn
+				{% if app.request.attributes.get('_route') == 'jk_static_pages_homepage' %} active {% endif %}">Qui suis-je ?</a></li>
+				<li><a href="{{ path('jk_static_pages_formationpage') }}" class="btn
+				{% if app.request.attributes.get('_route') == 'jk_static_pages_formationpage' %} active {% endif %}">Mes formations</a></li>
+				<li><a href="{{ path('jk_static_pages_experiencepage') }}" class="btn
+				{% if app.request.attributes.get('_route') == 'jk_static_pages_experiencepage' %} active {% endif %}">Mes expériences</a></li>
+				<li><a href="{{ path('jk_static_pages_contactpage') }}" class="btn
+				{% if app.request.attributes.get('_route') == 'jk_static_pages_contactpage' %} active {% endif %}">Me contacter</a></li>
 			</ul>
 			<ul class="nav navbar-nav pull-right" id="sociallinks">
 				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/email-variation.png')}}"/></a></li>

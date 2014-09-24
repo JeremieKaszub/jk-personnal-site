@@ -1,0 +1,36 @@
+<div class="sidebar-nav span3 fill" id="base-menu">
+  <div class="navbar navbar-default" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="{{ path('jk_static_pages_experiencepage', { 'part': 'school' }) }}">
+          Scolaires
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
+              icon-play icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="{{ path('jk_static_pages_experiencepage', { 'part': 'proxp' }) }}">
+          Professionnelles
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/proxp' %}
+              icon-play icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="{{ path('jk_static_pages_experiencepage', { 'part': 'personnal' }) }}">
+          Personnelles
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/personnal' %}
+              icon-play icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li>
+      </ul>
+  </div>
+</div>
