@@ -19,16 +19,13 @@
         "sensio/framework-extra-bundle": "2.3.*",
         "sensio/generator-bundle": "2.3.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "mopa/bootstrap-bundle": "dev-master",
-        "twbs/bootstrap-sass": "dev-master",
-        "knplabs/knp-paginator-bundle": "dev-master",
-        "knplabs/knp-menu-bundle": "dev-master",
-        "knplabs/knp-menu": "2.0.*@dev",
-        "craue/formflow-bundle": "dev-master",
-        "mthaml/mthaml-bundle": "dev-master",
+        "mopa/bootstrap-bundle": "3.*",
+        "twbs/bootstrap-sass": "3.2.*",
+        "craue/formflow-bundle": "3.0.*",
+        "mthaml/mthaml-bundle": "1.2.*",
         "twitter/bootstrap": "2.3.*",
         "jquery/jquery": "1.9.1",
-        "leafo/lessphp": "dev-master"
+        "leafo/lessphp": "0.4.*"
     },
     "repositories": [
         {
