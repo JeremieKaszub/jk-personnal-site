@@ -1,0 +1,11 @@
+{% extends 'JKStaticPagesBundle::layout.html.twig' %}
+
+{% block body %}
+	{% include "JKStaticPagesBundle:Contact:_contact-menu.html.twig" %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
+		{% include "JKStaticPagesBundle:Contact:_regular.html.twig" %}
+	{% endif %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/online' %}
+		{% include "JKStaticPagesBundle:Contact:_online.html.twig" %}
+	{% endif %}
+{% endblock %}

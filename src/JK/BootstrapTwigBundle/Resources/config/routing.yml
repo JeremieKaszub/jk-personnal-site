@@ -1,0 +1,3 @@
+jk_bootstrap_twig_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: JKBootstrapTwigBundle:Default:index }

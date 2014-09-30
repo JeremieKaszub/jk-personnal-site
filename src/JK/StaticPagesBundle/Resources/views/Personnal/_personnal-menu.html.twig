@@ -1,0 +1,46 @@
+<div class="sidebar-nav span3 fill" id="base-menu">
+  <div class="navbar navbar-default" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="{{ path('jk_static_pages_personnalpage', { 'part': 'bio' }) }}">
+          Biographie
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
+              icon-arrow-right icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="{{ path('jk_static_pages_personnalpage', { 'part': 'pro' }) }}">
+          Démarche professionnelle
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/pro' %}
+              icon-arrow-right icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li>
+        <li>
+          <a href="{{ path('jk_static_pages_personnalpage', { 'part': 'formations' }) }}">
+          Formations
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/formations' %}
+              icon-arrow-right icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li>
+        <!--<li>
+          <a href="{{ path('jk_static_pages_personnalpage', { 'part': 'links' }) }}">
+          Quelques liens
+            <i class="
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/links' %}
+              icon-arrow-right icon-white
+            {% endif %}">
+            </i>
+          </a>
+        </li> -->
+      </ul>
+  </div>
+</div>

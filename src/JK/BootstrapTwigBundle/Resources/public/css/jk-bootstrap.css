@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+/* Icon url */
+[class^="icon-"], [class*=" icon-"] {
+	background-image: url(../images/glyphicons-halflings.png);
+}
+.icon-white, .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:focus > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > li > a:focus > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"], .dropdown-submenu:hover > a > [class^="icon-"], .dropdown-submenu:focus > a > [class^="icon-"], .dropdown-submenu:hover > a > [class*=" icon-"], .dropdown-submenu:focus > a > [class*=" icon-"] {
+	background-image: url(../images/glyphicons-halflings-white.png);
+}
+
+/* make sidebar nav vertical */
+@media (min-width: 768px) {
+  #jkfooter #base-menu .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  #base-menu .sidebar-nav .navbar ul {
+    float: none;
+  }
+  #jkfooter #base-menu .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+}
+
+#main-content {
+	position: absolute;
+	top: 167px;
+	bottom: 0;
+}
+/* color specs */
+#jkheader {
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	height: 167px;
+}
+
+#jkheader h1 {
+	color: #fff;
+}
+
+#jkheader img {
+	margin-left: 8px;
+	margin-top: 8px;
+}
+
+
+#jkheadernavbar {
+	background-color: #F87531;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	margin-bottom: 0;
+	vertical-align: center;
+	outline-width: 0px;
+	height:58px;
+}
+
+#jkheadernavbar .btn {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 8px;
+	background-color: #d3d3d3;
+}
+
+#jkheadernavbar a {
+	color: #fff;
+	text-shadow: none;
+	vertical-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#sociallinks {
+	height: 58px;
+	vertical-align: center;
+}
+
+#sociallinks li {
+	height: 58px;
+	width: 58px;
+	text-align: center;
+}
+
+#sociallinks a {
+	height: 58px;
+	width: 58px;
+	padding: 0;
+	margin: 0;
+	vertical-align: center;
+}
+
+#sociallinks img {
+	padding: 0;
+	margin: 13px;
+	vertical-align: center;
+}
+
+#jkfooter {
+	background-color: #000;
+	color: #d3d3d3;
+	padding-left: 8px;
+}
+
+#jkfooter a {
+	color: #fff;
+}
+
+#base-menu {
+	background-color: #363636;
+	outline-width: 0px;
+	display: inline;
+	height: 100%;
+	position: fixed;
+	width: 250px;
+}
+
+#base-menu a {
+	color: #fff;
+	text-shadow: none;
+}
+
+#main-text {
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 280px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#text-header {
+	padding-top : 27px;
+}
+
+#text-content {
+	float: right;
+}
+
+#text-content p {
+	text-align: justify;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+#sociallinkshelper {
+	background-color: #363636;
+	color: #fff;
+}

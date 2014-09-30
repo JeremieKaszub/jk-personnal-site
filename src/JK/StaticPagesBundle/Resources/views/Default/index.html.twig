@@ -1,0 +1,14 @@
+{% extends 'JKStaticPagesBundle::layout.html.twig' %}
+
+{% block body %}
+	{% include "JKStaticPagesBundle:Default:_index-menu.html.twig" %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
+		{% include "JKStaticPagesBundle:Default:_pro.html.twig" %}
+	{% endif %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/perso' %}
+		{% include "JKStaticPagesBundle:Default:_perso.html.twig" %}
+	{% endif %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/freelance' %}
+		{% include "JKStaticPagesBundle:Default:_freelance.html.twig" %}
+	{% endif %}
+{% endblock %}
