@@ -1,42 +1,32 @@
-<div class="sidebar-nav span3 fill" id="base-menu">
+<div class="sidebar-nav span3 fill pull-left" id="base-menu">
   <div class="navbar navbar-default" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="{{ path('jk_static_pages_homepage', { 'part': 'bio' }) }}">
-          Biographie
+          <a href="{{ path('jk_static_pages_homepage', { 'part': 'pro' }) }}">
+          Professionnels
             <i class="
             {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
-              icon-play icon-white
+              icon-arrow-right icon-white
             {% endif %}">
             </i>
           </a>
         </li>
         <li>
-          <a href="{{ path('jk_static_pages_homepage', { 'part': 'pro' }) }}">
-          Démarche professionnelle
+          <a href="{{ path('jk_static_pages_homepage', { 'part': 'perso' }) }}">
+          Particuliers
             <i class="
-            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/pro' %}
-              icon-play icon-white
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/perso' %}
+              icon-arrow-right icon-white
             {% endif %}">
             </i>
           </a>
         </li>
         <li>
-          <a href="{{ path('jk_static_pages_homepage', { 'part': 'services' }) }}">
-          Mes services
+          <a href="{{ path('jk_static_pages_homepage', { 'part': 'freelance' }) }}">
+          Sous-traitance
             <i class="
-            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/services' %}
-              icon-play icon-white
-            {% endif %}">
-            </i>
-          </a>
-        </li>
-        <li>
-          <a href="{{ path('jk_static_pages_homepage', { 'part': 'links' }) }}">
-          Quelques liens
-            <i class="
-            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/links' %}
-              icon-play icon-white
+            {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/freelance' %}
+              icon-arrow-right icon-white
             {% endif %}">
             </i>
           </a>

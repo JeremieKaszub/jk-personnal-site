@@ -6,7 +6,7 @@
           Voies classiques
             <i class="
             {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
-              icon-play icon-white
+              icon-arrow-right icon-white
             {% endif %}">
             </i>
           </a>
@@ -16,7 +16,7 @@
           En ligne
             <i class="
             {% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/online' %}
-              icon-play icon-white
+              icon-arrow-right icon-white
             {% endif %}">
             </i>
           </a>

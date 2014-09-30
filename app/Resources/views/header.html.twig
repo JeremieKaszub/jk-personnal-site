@@ -2,30 +2,52 @@
 
 
 	<h1>
-		<img src="{{ asset('bundles/jkstaticpages/images/jkpic.jpg')}}" class="img-circle"/>
-		Jérémie Kaszub.
-		<small>Développeur web indépendant.</small>
+		<a href="http://jeremiekaszub.com"><img src="{{ asset('bundles/jkstaticpages/images/jkpic.jpg')}}" class="img-circle"/></a>
+		Jérémie Kaszub
+		<small>Développeur web indépendant</small>
 	</h1>
 
 	<div class="container-fluid" id="jkheadernavbar">
 		<nav class="navbar navbar-default" role="navigation">
 			<ul class="nav navbar-nav">
-				<li><a href="{{ path('jk_static_pages_homepage') }}" class="btn
-				{% if app.request.attributes.get('_route') == 'jk_static_pages_homepage' %} active {% endif %}">Qui suis-je ?</a></li>
-				<li><a href="{{ path('jk_static_pages_formationpage') }}" class="btn
-				{% if app.request.attributes.get('_route') == 'jk_static_pages_formationpage' %} active {% endif %}">Mes formations</a></li>
-				<li><a href="{{ path('jk_static_pages_experiencepage') }}" class="btn
-				{% if app.request.attributes.get('_route') == 'jk_static_pages_experiencepage' %} active {% endif %}">Mes expériences</a></li>
-				<li><a href="{{ path('jk_static_pages_contactpage') }}" class="btn
-				{% if app.request.attributes.get('_route') == 'jk_static_pages_contactpage' %} active {% endif %}">Me contacter</a></li>
+				<li><a href="{{ path('jk_static_pages_homepage') }}" class="text-center">
+				Mes Services<br/>
+					<i class="
+			            {% if app.request.attributes.get('_route') == 'jk_static_pages_homepage' %}
+			                icon-arrow-down icon-white
+			            {% endif %}">
+		            </i></a>
+	            </li>
+				<li><a href="{{ path('jk_static_pages_experiencepage') }}" class="text-center">
+				Mes Expériences<br/>
+					<i class="
+			            {% if app.request.attributes.get('_route') == 'jk_static_pages_experiencepage' %}
+			                icon-arrow-down icon-white
+			            {% endif %}">
+		            </i></a>
+	            </li>
+				<li><a href="{{ path('jk_static_pages_personnalpage') }}" class="text-center">
+				Qui suis-je ?<br/>
+					<i class="
+			            {% if app.request.attributes.get('_route') == 'jk_static_pages_personnalpage' %}
+			                icon-arrow-down icon-white
+			            {% endif %}">
+		            </i></a>
+	            </li>
+				<li><a href="{{ path('jk_static_pages_contactpage') }}" class="text-center">
+				Me contacter<br/>
+					<i class="
+			            {% if app.request.attributes.get('_route') == 'jk_static_pages_contactpage' %}
+			                icon-arrow-down icon-white
+			            {% endif %}">
+		            </i></a>
+	            </li>
 			</ul>
 			<ul class="nav navbar-nav pull-right" id="sociallinks">
-				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/email-variation.png')}}"/></a></li>
-				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/googleplus.png')}}"/></a></li>
-				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/github.png')}}"/></a></li>
-				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/facebook-variation.png')}}"/></a></li>
-				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/linkedin-variation.png')}}"/></a></li>
-				<li><a href="#"><img src="{{ asset('bundles/jkstaticpages/images/twitter-variation.png')}}"/></a></li>
+				<li><a href="http://github.com/JeremieKaszub"><img src="{{ asset('bundles/jkstaticpages/images/github.png')}}"/></a></li>
+				<li><a href="http://facebook.com/jeremiekaszubdevweb"><img src="{{ asset('bundles/jkstaticpages/images/facebook-variation.png')}}"/></a></li>
+				<li><a href="http://www.linkedin.com/pub/j%C3%A9r%C3%A9mie-kaszub/79/840/a8a"><img src="{{ asset('bundles/jkstaticpages/images/linkedin-variation.png')}}"/></a></li>
+				<li><a href="http://twitter.com/JKaszub"><img src="{{ asset('bundles/jkstaticpages/images/twitter-variation.png')}}"/></a></li>
 			</ul>
 		</nav>
 

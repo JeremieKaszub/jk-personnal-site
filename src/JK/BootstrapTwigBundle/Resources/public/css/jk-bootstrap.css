@@ -61,6 +61,7 @@ body {
 	margin-top: 8px;
 }
 
+
 #jkheadernavbar {
 	background-color: #F87531;
 	padding-top: 0;
@@ -69,6 +70,7 @@ body {
 	margin-bottom: 0;
 	vertical-align: center;
 	outline-width: 0px;
+	height:58px;
 }
 
 #jkheadernavbar .btn {
@@ -79,13 +81,36 @@ body {
 }
 
 #jkheadernavbar a {
-	color: #000;
+	color: #fff;
 	text-shadow: none;
+	vertical-align: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#sociallinks {
+	height: 58px;
+	vertical-align: center;
+}
+
+#sociallinks li {
+	height: 58px;
+	width: 58px;
+	text-align: center;
+}
+
+#sociallinks a {
+	height: 58px;
+	width: 58px;
+	padding: 0;
+	margin: 0;
 	vertical-align: center;
 }
 
 #sociallinks img {
-	margin : 0;
+	padding: 0;
+	margin: 13px;
+	vertical-align: center;
 }
 
 #jkfooter {
@@ -103,9 +128,57 @@ body {
 	outline-width: 0px;
 	display: inline;
 	height: 100%;
+	position: fixed;
+	width: 250px;
 }
 
 #base-menu a {
 	color: #fff;
 	text-shadow: none;
+}
+
+#main-text {
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 280px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#text-header {
+	padding-top : 27px;
+}
+
+#text-content {
+	float: right;
+}
+
+#text-content p {
+	text-align: justify;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+#sociallinkshelper {
+	background-color: #363636;
+	color: #fff;
 }

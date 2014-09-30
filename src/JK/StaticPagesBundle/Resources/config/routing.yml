@@ -1,14 +1,14 @@
 jk_static_pages_homepage:
     path:     /home/{part}
-    defaults: { _controller: JKStaticPagesBundle:Default:index, part: bio }
+    defaults: { _controller: JKStaticPagesBundle:Default:index, part: pro }
 
-jk_static_pages_formationpage:
-    path:     /formation/{part}
-    defaults: { _controller: JKStaticPagesBundle:Default:formation, part: humansciences }
+jk_static_pages_personnalpage:
+    path:     /personnal/{part}
+    defaults: { _controller: JKStaticPagesBundle:Default:personnal, part: bio }
 
 jk_static_pages_experiencepage:
     path:     /experience/{part}
-    defaults: { _controller: JKStaticPagesBundle:Default:experience, part: school }
+    defaults: { _controller: JKStaticPagesBundle:Default:experience, part: proxp }
 
 jk_static_pages_contactpage:
     path:     /contact/{part}

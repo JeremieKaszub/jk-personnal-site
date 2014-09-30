@@ -3,15 +3,12 @@
 {% block body %}
 	{% include "JKStaticPagesBundle:Default:_index-menu.html.twig" %}
 	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
-		{% include "JKStaticPagesBundle:Default:_bio.html.twig" %}
-	{% endif %}
-	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/pro' %}
 		{% include "JKStaticPagesBundle:Default:_pro.html.twig" %}
 	{% endif %}
-	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/services' %}
-		{% include "JKStaticPagesBundle:Default:_services.html.twig" %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/perso' %}
+		{% include "JKStaticPagesBundle:Default:_perso.html.twig" %}
 	{% endif %}
-	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/links' %}
-		{% include "JKStaticPagesBundle:Default:_links.html.twig" %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/freelance' %}
+		{% include "JKStaticPagesBundle:Default:_freelance.html.twig" %}
 	{% endif %}
 {% endblock %}

@@ -11,9 +11,9 @@ class DefaultController extends Controller
         return $this->render('JKStaticPagesBundle:Default:index.html.twig');
     }
 
-    public function formationAction()
+    public function personnalAction()
     {
-    	return $this->render('JKStaticPagesBundle:Formation:formation.html.twig');
+    	return $this->render('JKStaticPagesBundle:Personnal:personnal.html.twig');
     }
 
     public function experienceAction()

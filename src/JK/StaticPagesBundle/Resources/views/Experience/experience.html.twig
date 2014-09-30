@@ -3,10 +3,10 @@
 {% block body %}
 	{% include "JKStaticPagesBundle:Experience:_experience-menu.html.twig" %}
 	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '' %}
-		{% include "JKStaticPagesBundle:Experience:_school.html.twig" %}
-	{% endif %}
-	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/proxp' %}
 		{% include "JKStaticPagesBundle:Experience:_proxp.html.twig" %}
+	{% endif %}
+	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/school' %}
+		{% include "JKStaticPagesBundle:Experience:_school.html.twig" %}
 	{% endif %}
 	{% if path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) == path(app.request.attributes.get('_route')) ~ '/personnal' %}
 		{% include "JKStaticPagesBundle:Experience:_personnal.html.twig" %}
